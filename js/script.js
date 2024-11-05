@@ -1,7 +1,16 @@
-const button = document.querySelectorAll(".place");
+const places = document.querySelectorAll(".place");
 
-button.addEventListner("mousover",()=>{
-    button.style.backgroundColor = "blue"; 
-    button.style.color = "white";
-    button.style.transform = "scale(1.1)";
-})
+function addHoverEffect(event) {
+    event.currentTarget.style.transform = "scale(1.05)";
+    event.currentTarget.style.boxShadow = "0px 4px 15px rgba(0, 0, 0, 0.3)";
+}
+
+function removeHoverEffect(event) {
+    event.currentTarget.style.transform = "scale(1)";
+    event.currentTarget.style.boxShadow = "none";
+}
+
+places.forEach((place) => {
+    place.addEventListener("mouseover", addHoverEffect);
+    place.addEventListener("mouseout", removeHoverEffect);
+});
