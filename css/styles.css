@@ -4,33 +4,43 @@ body {
     padding: 0;
     background-color: #f0f0f0;
 }
-
-header {
-    background-color: #2a2a2a;
-    color: #fff;
-    padding: 20px;
+.heading{
+    position: absolute;
     text-align: center;
+    align-items: center;
+    color: black;
+    top: 10%;
+    left: 35%;
+}
+#places{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+#places img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 #places .place {
-    background-color: #fff;
-    padding: 15px;
-    margin: 15px;
-    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 330px;
+    backdrop-filter: blur(10.9px);
+    -webkit-backdrop-filter: blur(10.9px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 #gallery .slideshow-container {
     position: relative;
 }
 
-.slide {
-    display: none;
+.apostolic{
+    background-image: url(../images/apostolic.jpeg);
 }
 
-.slide img {
-    width: 100%;
-}
-
-.prev, .next {
-    cursor: pointer;
-}
