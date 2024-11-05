@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vatican City</title>
+    <title>Vatican City Tourism</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="content">
-        <h1 class="heading">
-            Vatican City
-        </h1>
-        <p>
-            Popular Tourism
-        </p>
-    </div>
+    <header>
+        <h1>Welcome to Vatican City</h1>
+        <p>Explore the heart of the Roman Catholic Church, its historical sites, and architectural wonders.</p>
+    </header>
+    
+    <main>
+        <section id="places">
+            <div class="place" onclick="window.location.href='st-peters-basilica.html'">
+                <h2>St. Peter’s Basilica</h2>
+                <p>An iconic church with stunning architecture and art.</p>
+            </div>
+            <div class="place" onclick="window.location.href='castel-gandolfo.html'">
+                <h2>Castel Gandolfo Papal Palace</h2>
+                <p>The traditional summer residence of the Pope with scenic views.</p>
+            </div>
+            <div class="place" onclick="window.location.href='apostolic-palace.html'">
+                <h2>Apostolic Palace</h2>
+                <p>The Pope's residence, housing the Vatican Museums and Sistine Chapel.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
