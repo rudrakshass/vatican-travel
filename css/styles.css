@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    background-color:FEFAE0;
 }
 
 .backgroundimage{
@@ -13,8 +14,9 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    filter: blur(3px); 
+    filter: blur(2.3px); 
     z-index: -1;
+    
 }
 
 #places{
@@ -22,6 +24,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 15%;
+    
 }
 
 #places img {
@@ -30,28 +33,44 @@ body {
 }
 
 #places .place {
-    border-radius: 8px;
+    border-radius: 9px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 1rem;
     padding: 1rem;
     text-align: center;
-    width: 330px;
+    width: 300px;
     backdrop-filter: blur(10.9px);
     -webkit-backdrop-filter: blur(10.9px);
     border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color:#EDE8DC;
+    margin-top:-100px;
+
+
 }
 
 #gallery .slideshow-container {
     position: relative;
 }
 
+.new{
+    text-align:center;
+    font-size:53px;
+    font-family:Raleway, sans-serif;
+    
+
+}    
+
+.para{
+    text-align:center;
+}
+
 .location{
     width: 85%;
     max-width: 2500px;
     background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     padding: 20px;
-    border-radius: 10px; 
+    border-radius: 12px; 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,12 +81,13 @@ body {
 
 .location .heading{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
+  
 }
 
 .location p{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     font-weight: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
