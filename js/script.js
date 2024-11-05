@@ -1,16 +1,7 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const button = document.querySelectorAll(".place");
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    let slides = document.getElementsByClassName("slide");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-}
+button.addEventListner("mousover",()=>{
+    button.style.backgroundColor = "blue"; 
+    button.style.color = "white";
+    button.style.transform = "scale(1.1)";
+})
